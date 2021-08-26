@@ -300,6 +300,7 @@ extension RegisterScreenVC: AVFaceDetectionCamVCDelegate {
     func didReturnUserFaceImage(image: UIImage?) {
         userImage = image
         selfieImage.image = image
+        reloadView()
     }
     
 }
